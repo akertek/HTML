@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Bootstap 2 şekilde eklenebilir biz cdn şeklinde uzak sistemden dosyalarımızı çekeceğiz-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- responsive özelliklerimizi alması icin  width=device-width ile uygulamanın açıldığı ortama göre boyutlandırması için eklenmiştir
+    initial-scale=1 ise oran olarak 1 e 1 lik bir oranda çalışmasını istediğimiz için eklendi
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Css dosyamızı ekleyeceğiz - en alta eklememizin sebebi en baskın olmasını istememiz-->
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- nav menü-->
+
+    <!-- en basit tanımlama bu şekilde -->
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item"> <a href="#" class="nav-link">test1 </a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link">test2 </a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link">test3 </a> </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <nav>
+        <ul class="nav"> 
+            <li class="nav-item">
+                <a href="#" class="nav-link">test1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">test1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">test1</a>
+            </li>
+        </ul>
+    
+    </nav>
+    
+    <br>
+    <br>
+
+
+
+    <!-- nav-tabs ekledik ve tablara bölünmüş bir yapı gibi oldu-->
+    <!-- link active verdiğimizde ise sanki önceden tıklanmış girilmiş sayfa gibi oldı -->
+    <!-- disabled link olduğunda tıklanamaz oluyor-->
+    <!-- 0 css ile bu şekilde menü yapabiliyoruz-->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"> <a href="#" class="nav-link active">test1 </a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link disabled">test2 </a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link">test3 </a> </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <!-- nav kullanımı görüntü olarak bir işlem yapmaz ancak kod kalitesi olarak + sağlar-->
+    <!-- ul içinde class a verilir - - justify-content-center menümüzü sayfanın ortasında konumlandırmamızı sağladı-->
+    <!-- ul içinde class a verilir - - justify-content-end menümüzü sayfanın sonuna koyar konumlandırmamızı sağladı-->
+
+
+    <div class="container">
+        <nav>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item"> <a href="#" class="nav-link active">test1 </a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link disabled">test2 </a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link">test3 </a> </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <br>
+    <br>
+    <!--ul ye veriliyor  nav nav-pills nav-fill -- menü itemların containerin tamamını kaplamasını sağlıyoruz -->
+
+    <div class="container">
+        <nav>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item"> <a href="#" class="nav-link active">test1 </a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link disabled">test2 </a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link">test3 </a> </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <br>
+    <br>
+    <!-- <a class="navbar-brand" href="#">logo </a>-->
+    <!-- logo koymak için yukarıda yazdığımız kodu ekledik. -->
+    <div class="container">
+        <nav>
+            <a class="navbar-brand" href="#">logo </a>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item"> <a href="#" class="nav-link active">test1 </a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link disabled">test2 </a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link">test3 </a> </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+<!-- jquery kodlarını eklemek zorunda değiliz-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
